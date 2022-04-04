@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <title>DrivenEats</title>
-
+    
     <link rel="shortcut icon" type="image/x-icon" href="imagens/icone.png">
 </head>
 <body>
@@ -28,30 +28,39 @@
         </div>
         <div class="overflow">
             <div class="opcoes-comida">
-                    <div class="prato borda" onclick="selecionarComida()">
-                        <img src="./imagens/frango.png" alt="prato"/>
-                        <div class="nome-comida">
-                            <h1>Frango Yin Yang</h1>
-                            <p>Um pouco de batata, um pouco de salada</p>
-                            <h1>R$ 14,90</h1>
-                        </div>
+                <div class="prato" onclick="selecionarComida(this)">
+                    <img src="./imagens/frango.png" alt="prato"/>
+                    <div class="nome-comida">
+                        <h1>Frango Yin Yang</h1>
+                        <p>Um pouco de batata, um pouco de salada</p>
+                    <div class="valor">
+                        <h1>R$ 14,90</h1>
+                        <img class = "check esconde" src="./imagens/check.png" alt="selecionado"/>
                     </div>
-                    <div class="prato borda" onclick="selecionarComida()">
-                        <img src="./imagens/frango.png" alt="prato"/>
-                        <div class="nome-comida">
-                            <h1>Frango Yin Yang</h1>
-                            <p>Um pouco de batata, um pouco de salada</p>
-                            <h1>R$ 14,90</h1>
-                        </div>
                     </div>
-                    <div class="prato borda" onclick="selecionarComida()">
-                        <img src="./imagens/frango.png" alt="prato"/>
-                        <div class="nome-comida">
-                            <h1>Frango Yin Yang</h1>
-                            <p>Um pouco de batata, um pouco de salada</p>
-                            <h1>R$ 14,90</h1>
-                        </div>
+                </div>
+                <div class="prato " onclick="selecionarComida(this)">
+                    <img src="./imagens/frango.png" alt="prato"/>
+                    <div class="nome-comida">
+                        <h1>Frango Yin Yang</h1>
+                        <p>Um pouco de batata, um pouco de salada</p>
+                         <div class="valor">
+                        <h1>R$ 14,90</h1>
+                        <img class = "check esconde" src="./imagens/check.png" alt="selecionado"/>
                     </div>
+                    </div>
+                </div>
+                <div class="prato" onclick="selecionarComida(this)">
+                    <img src="./imagens/frango.png" alt="prato"/>
+                    <div class="nome-comida">
+                        <h1>Frango Yin Yang</h1>
+                        <p>Um pouco de batata, um pouco de salada</p>
+                         <div class="valor">
+                        <h1>R$ 14,90</h1>
+                        <img class = "check esconde"  src="./imagens/check.png" alt="selecionado"/>
+                    </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="descricao-pedido">
@@ -59,28 +68,38 @@
         </div>
         <div class="overflow">    
             <div class="opcoes-comida">
-                    <div class="prato borda" onclick="selecionarComida()">
-                        <img src="./imagens/frango.png" alt="prato"/>
+                    <div class="prato" onclick="selecionarBebida(this)">
+                        <img src="./imagens/frango.png" alt="bebida1"/>
                         <div class="nome-comida">
                             <h1>Frango Yin Yang</h1>
                             <p>Um pouco de batata, um pouco de salada</p>
-                            <h1>R$ 14,90</h1>
+                             <div class="valor">
+                                 <h1>R$ 14,90</h1>
+                                <img class = "check check1 esconde" src="./imagens/check.png" alt="selecionado"/>
+                            </div>
                         </div>
                     </div>
-                    <div class="prato borda" onclick="selecionarComida()">
-                        <img src="./imagens/frango.png" alt="prato"/>
+                    
+                    <div class="prato" onclick="selecionarBebida(this)">
+                        <img src="./imagens/frango.png" alt="bebida2"/>
                         <div class="nome-comida">
                             <h1>Frango Yin Yang</h1>
                             <p>Um pouco de batata, um pouco de salada</p>
-                            <h1>R$ 14,90</h1>
+                            <div class="valor">
+                                <h1>R$ 14,90</h1>
+                                <img class = "check esconde" src="./imagens/check.png" alt="selecionado"/>
+                            </div>
                         </div>
                     </div>
-                    <div class="prato borda" onclick="selecionarComida()">
-                        <img src="./imagens/frango.png" alt="prato"/>
+                    <div class="prato" onclick="selecionarBebida(this)">
+                        <img src="./imagens/frango.png" alt="bebida3"/>
                         <div class="nome-comida">
                             <h1>Frango Yin Yang</h1>
                             <p>Um pouco de batata, um pouco de salada</p>
-                            <h1>R$ 14,90</h1>
+                            <div class="valor">
+                                <h1>R$ 14,90</h1>
+                                <img class = "check esconde" src="./imagens/check.png" alt="selecionado"/>
+                            </div>
                         </div>
                     </div>
             </div>
@@ -90,37 +109,45 @@
         </div>
         <div class="overflow">    
             <div class="opcoes-comida">
-                    <div class="prato borda" onclick="selecionarComida()">
+                    <div class="prato" onclick="selecionarSobremesa(this)">
                         <img src="./imagens/frango.png" alt="prato"/>
                         <div class="nome-comida">
                             <h1>Frango Yin Yang</h1>
                             <p>Um pouco de batata, um pouco de salada</p>
-                            <h1>R$ 14,90</h1>
+                            <div class="valor">
+                                <h1>R$ 14,90</h1>
+                                <img class = "check esconde" src="./imagens/check.png" alt="selecionado"/>
+                            </div>
                         </div>
                     </div>
-                    <div class="prato borda" onclick="selecionarComida()">
+                    <div class="prato" onclick="selecionarSobremesa(this)">
                         <img src="./imagens/frango.png" alt="prato"/>
                         <div class="nome-comida">
                             <h1>Frango Yin Yang</h1>
                             <p>Um pouco de batata, um pouco de salada</p>
-                            <h1>R$ 14,90</h1>
+                            <div class="valor">
+                                <h1>R$ 14,90</h1>
+                                <img class = "check esconde" src="./imagens/check.png" alt="selecionado"/>
+                            </div>
                         </div>
                     </div>
-                    <div class="prato borda" onclick="selecionarComida()">
+                    <div class="prato" onclick="selecionarSobremesa(this)">
                         <img src="./imagens/frango.png" alt="prato"/>
                         <div class="nome-comida">
                             <h1>Frango Yin Yang</h1>
                             <p>Um pouco de batata, um pouco de salada</p>
-                            <h1>R$ 14,90</h1>
+                            <div class="valor">
+                                <h1>R$ 14,90</h1>
+                                <img class = "check esconde" src="./imagens/check.png" alt="selecionado"/>
+                            </div>
                         </div>
                     </div>
             </div>
         </div>
     </section>
     <footer>
-        <button>Selecione os 3 itens para fechar o pedido</button>
+        <button >Selecione os 3 itens para fechar o pedido</button>
     </footer>
-    
     <script src="js/script.js"></script>
 </body>
 </html>

@@ -5,7 +5,6 @@ body{
 }
 header{
     font-family: 'Righteous', cursive;
-
     display: flex;
     box-shadow: 0px 2px 15px black;
     background-color: #CF2B2B;
@@ -69,12 +68,22 @@ section{
     border-radius: 10px;
     box-shadow: 0px 1px 4px black;
     background-color: #FFFFFF;
+    cursor: pointer;
+
 }
-/* .borda{
+.bordaComida{
     box-sizing: border-box;
     border: 5px solid #32B72F;
-} */
-.prato img{
+}
+.bordaBebida{
+    box-sizing: border-box;
+    border: 5px solid #32B72F;
+}
+.bordasobremesa{
+    box-sizing: border-box;
+    border: 5px solid #32B72F;
+}
+.prato img:nth-child(1){
     margin-top: 18px;
     width: 144px;
     height: 87px;
@@ -89,7 +98,11 @@ section{
     font-size: 16px;
     margin-bottom: 2px;
 }
-.nome-comida h1:nth-child(3){
+.valor{
+    display: flex;
+    margin-top: px;
+}
+.valor h1:nth-child(1){
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -119,5 +132,14 @@ footer button{
     border-radius: 50px;
     color: #FFFFFF;
     background-color: #CBCBCB;
-
+    cursor: pointer;
+}
+.check{
+   height: 15px;
+   width: 15px;
+   margin-top: 5px;
+   margin-left: 60px;
+} 
+.esconde{
+    display: none;
 }
