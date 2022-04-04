@@ -3,15 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Parret Card Game</title>
+    <title>DrivenEats</title>
 
     <link rel="shortcut icon" type="image/x-icon" href="imagens/icone.png">
 </head>
 <body>
-    <h1>DrivenEats</h1>
+    <header>
+        <div class="topo">
+            <h1>DrivenEats</h1>
+            <h3>Sua comida em 6 minutos</h3>
+        </div>
+    </header>
+    <section>
+        <div class="descricao-pedido">
+            <p>Primeiro, seu prato</p>
+        </div>
+        <div class="overflow">
+            <div class="opcoes-comida">
+                    <div class="prato borda" onclick="selecionarComida()">
+                        <img src="./imagens/frango.png" alt="prato"/>
+                        <div class="nome-comida">
+                            <h1>Frango Yin Yang</h1>
+                            <p>Um pouco de batata, um pouco de salada</p>
+                            <h1>R$ 14,90</h1>
+                        </div>
+                    </div>
+                    <div class="prato borda" onclick="selecionarComida()">
+                        <img src="./imagens/frango.png" alt="prato"/>
+                        <div class="nome-comida">
+                            <h1>Frango Yin Yang</h1>
+                            <p>Um pouco de batata, um pouco de salada</p>
+                            <h1>R$ 14,90</h1>
+                        </div>
+                    </div>
+                    <div class="prato borda" onclick="selecionarComida()">
+                        <img src="./imagens/frango.png" alt="prato"/>
+                        <div class="nome-comida">
+                            <h1>Frango Yin Yang</h1>
+                            <p>Um pouco de batata, um pouco de salada</p>
+                            <h1>R$ 14,90</h1>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="descricao-pedido">
+            <p>Agora, sua bebida</p>
+        </div>
+        <div class="overflow">    
+            <div class="opcoes-comida">
+                    <div class="prato borda" onclick="selecionarComida()">
+                        <img src="./imagens/frango.png" alt="prato"/>
+                        <div class="nome-comida">
+                            <h1>Frango Yin Yang</h1>
+                            <p>Um pouco de batata, um pouco de salada</p>
+                            <h1>R$ 14,90</h1>
+                        </div>
+                    </div>
+                    <div class="prato borda" onclick="selecionarComida()">
+                        <img src="./imagens/frango.png" alt="prato"/>
+                        <div class="nome-comida">
+                            <h1>Frango Yin Yang</h1>
+                            <p>Um pouco de batata, um pouco de salada</p>
+                            <h1>R$ 14,90</h1>
+                        </div>
+                    </div>
+                    <div class="prato borda" onclick="selecionarComida()">
+                        <img src="./imagens/frango.png" alt="prato"/>
+                        <div class="nome-comida">
+                            <h1>Frango Yin Yang</h1>
+                            <p>Um pouco de batata, um pouco de salada</p>
+                            <h1>R$ 14,90</h1>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="descricao-pedido">
+            <p>Por fim, sua sobremesa</p>
+        </div>
+        <div class="overflow">    
+            <div class="opcoes-comida">
+                    <div class="prato borda" onclick="selecionarComida()">
+                        <img src="./imagens/frango.png" alt="prato"/>
+                        <div class="nome-comida">
+                            <h1>Frango Yin Yang</h1>
+                            <p>Um pouco de batata, um pouco de salada</p>
+                            <h1>R$ 14,90</h1>
+                        </div>
+                    </div>
+                    <div class="prato borda" onclick="selecionarComida()">
+                        <img src="./imagens/frango.png" alt="prato"/>
+                        <div class="nome-comida">
+                            <h1>Frango Yin Yang</h1>
+                            <p>Um pouco de batata, um pouco de salada</p>
+                            <h1>R$ 14,90</h1>
+                        </div>
+                    </div>
+                    <div class="prato borda" onclick="selecionarComida()">
+                        <img src="./imagens/frango.png" alt="prato"/>
+                        <div class="nome-comida">
+                            <h1>Frango Yin Yang</h1>
+                            <p>Um pouco de batata, um pouco de salada</p>
+                            <h1>R$ 14,90</h1>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <button>Selecione os 3 itens para fechar o pedido</button>
+    </footer>
     
     <script src="js/script.js"></script>
 </body>

@@ -1,0 +1,3 @@
+function selecionarComida(){
+    alert("clicou")
+}
