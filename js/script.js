@@ -1,20 +1,32 @@
 let bordaComida;
 let bordaBebida;
 let bordasobremesa;
+let precoComida;
+let precoBebida;
+let precoSobremesa;
+let preco;
 
+function converter(preco){
+    preco = preco.replace("R$ ","").replace(",",".");
+    preco = Number(preco).toFixed(2) * 100; 
+    return preco;
+}
 function selecionarComida(opcao){
     bordaComida = document.querySelector(".bordaComida");
     if(bordaComida !== null){
         bordaComida.classList.remove("bordaComida");
     }
     opcao.classList.add("bordaComida");
-    bordaComida = true;
+    preco = opcao.querySelector(".overflow .opcoes-comida .prato .valor").innerHTML;
+    precoComida = converter(preco);
+    console.log(precoComida)
 
-    const check = document.querySelector(".check");
-    if(check !== null){
-        check.classList.remove("esconde");
-    }
-    check.classList.add("esconde");
+    // const check = document.querySelector(".check");
+    // if(check !== null){
+        //     check.classList.remove("esconde");
+        // }
+        // check.classList.add("esconde");
+    bordaComida = true;
     pedidofeito();
 }
 function selecionarBebida(opcao){
@@ -23,6 +35,9 @@ function selecionarBebida(opcao){
         bordaBebida.classList.remove("bordaBebida");
     }    
     opcao.classList.add("bordaBebida");
+    preco = opcao.querySelector(".overflow .opcoes-comida .prato .valor").innerHTML;
+    precoBebida = converter(preco);
+    console.log(precoBebida)
     bordaBebida = true;
     pedidofeito();
 
@@ -33,28 +48,33 @@ function selecionarSobremesa(opcao){
         bordasobremesa.classList.remove("bordasobremesa");
     }
     opcao.classList.add("bordasobremesa");
+    preco = opcao.querySelector(".overflow .opcoes-comida .prato .valor").innerHTML;
+    precoSobremesa = converter(preco);
+    console.log(precoSobremesa)
     bordasobremesa = true;
     pedidofeito();
 }
 function pedidofeito(){
     if(bordaComida & bordaBebida & bordasobremesa){
-        const botao = document.querySelector("button");
-        botao.innerHTML = "<a herf='https://wa.me/5592995074770?text=' + fixedEncodeURIComponent(str)>Finalizar pedido</a>";
+        const botao = document.querySelector("footer button");
+        botao.innerHTML = "Finalizar pedido</a>";
         botao.style.backgroundColor = "#32B72F";
     }
-    fixedEncodeURIComponent(str);
-    botao.innerHTML.onclick =` https://wa.me/5592995074770?text= ${fixedEncodeURIComponent(str)}`;
 }
-function check(selecionado){
-    if(bordaComida == true){
-        const check = document.querySelector(".check").classList.remove("esconde");
-    }
+//Tem que aceitar o pop-up da página
+function enviar(){
+    let nome = prompt("Qual seu nome?")
+    let endereco = prompt("Qual seu endereço?")
+    if(bordaComida & bordaBebida & bordasobremesa){
+    let total = precoComida + precoBebida + precoSobremesa;
+    const descricao = `Olá, gostaria de fazer o pedido:\n- Prato: Frango Yin Yang\n- Bebida: Coquinha Gelada\n
+    - Sobremesa: Pudim\nTotal: R$ ${(
+        total / 100).toFixed(2)}\n\n 
+        Nome:${nome}\n
+        Endereço:${endereco}`;
+      const linkZap = `https://wa.me/5592995074770?text=${encodeURIComponent(descricao)}`;
+    
+      window.open(linkZap);//Tem que aceitar o pop-up da página
+
 }
-str = "Olá, gostaria de fazer o pedido: - Prato: Frango Yin Yang - Bebida: Coquinha Gelada - Sobremesa: Pudim Total: R$ 27.70"
-function fixedEncodeURIComponent(str) {
-    return encodeURIComponent(str).replace(/[!'()*]/g, function(c) {
-      return '%' + c.charCodeAt(0).toString(16);
-    });
 }
-fixedEncodeURIComponent(str);
-console.log(str);
